@@ -36,8 +36,12 @@ function grade(score) {
     else if(score >=60 && score<=69){
         gradeOfStudent=2;
     }
-    else if(score <=59){
+    else if(score >=0 && score <=59){
         gradeOfStudent=1;
+    }
+    else if (score < 0  || score > 100){
+        gradeOfStudent =0;
+
     }
 
     // ...AND THIS COMMENT LINE!
